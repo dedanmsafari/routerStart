@@ -26,6 +26,13 @@ const index = () => {
       <Link href="/drawer" asChild replace>
         <Button title="Drawer" />
       </Link>
+
+      <Link href="/(tabs)" asChild replace>
+        <Button title="Tabs" />
+      </Link>
+      <Link href="/modal" asChild>
+        <Button title="Modal" />
+      </Link>
     </View>
   );
 };

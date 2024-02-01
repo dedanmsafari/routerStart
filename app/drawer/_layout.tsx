@@ -12,10 +12,7 @@ function CustomDrawerContent(props: any) {
   return (
     <DrawerContentScrollView {...props}>
       <DrawerItemList {...props} />
-      <DrawerItem
-        label="Reset Navigation"
-        onPress={() => router.replace("/")}
-      />
+      <DrawerItem label="Home" onPress={() => router.replace("/")} />
     </DrawerContentScrollView>
   );
 }
@@ -27,16 +24,15 @@ export default function Layout() {
         <Drawer.Screen
           name="news"
           options={{
-            drawerLabel: "Home",
-            title: "overview",
-           
+            drawerLabel: "News",
+            title: "News",
           }}
         />
         <Drawer.Screen
           name="profile"
           options={{
-            drawerLabel: "Home",
-            title: "overview",
+            drawerLabel: "Profile",
+            title: "Profile",
           }}
         />
       </Drawer>
